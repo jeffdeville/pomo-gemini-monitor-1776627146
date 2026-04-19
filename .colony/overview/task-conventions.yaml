@@ -1,0 +1,20 @@
+type: task-conventions
+project: pomo-gemini-monitor
+last_updated: 2026-04-19
+
+archetypes:
+  implementation:
+    deliverable: pr_merged
+    default_criteria:
+      - The requested behavior is implemented with the smallest practical change set.
+      - Regression coverage or equivalent verification is included for the touched behavior.
+  validation:
+    deliverable: validated
+    default_criteria:
+      - Acceptance criteria are verified against the running app or test harness.
+      - Reproduction details are captured for any failure.
+  agent_creation:
+    deliverable: pr_merged
+    default_criteria:
+      - The new agent definition includes explicit expertise tags.
+      - The new agent is scoped to concrete implementation work, not broad strategy.
